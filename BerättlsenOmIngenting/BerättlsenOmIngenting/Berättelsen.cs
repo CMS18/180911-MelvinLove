@@ -11,6 +11,7 @@ namespace BerättlsenOmIngenting
         public static void berättelse()
         {
             Console.WriteLine("Det var en gång");
+            Console.WriteLine("En hungrig varg såg på ");
         }
     }
 }

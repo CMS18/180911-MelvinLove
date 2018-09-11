@@ -3,14 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.SqlServer.Server;
 
 namespace BerättlsenOmIngenting
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Berättelsen.berättelse();
+            Berättelsen story = new Berättelsen();
+            story.FragaAnvandare();
+            story.Beratta();
+
+
+
         }
     }
 }

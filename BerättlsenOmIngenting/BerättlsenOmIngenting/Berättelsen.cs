@@ -8,10 +8,27 @@ namespace BerättlsenOmIngenting
 {
     public class Berättelsen
     {
-        public static void berättelse()
+        public string svarNamn;
+        public string favoritFärg;
+
+
+
+
+        public void FragaAnvandare()
         {
-            Console.WriteLine("Det var en gång");
-            Console.WriteLine("En hungrig varg såg på ");
+            Console.WriteLine("Vad heter du?");
+            svarNamn = Console.ReadLine();
+
+            Console.WriteLine("Vilken är din favoritfärg?");
+            favoritFärg = Console.ReadLine();
         }
+
+        public void Beratta()
+        {
+            Console.WriteLine();
+            Console.WriteLine($"Det var en gång en katt som hette {svarNamn}");
+            Console.WriteLine($"Kattens favoritfärg är {favoritFärg}");
+        }
+
     }
 }

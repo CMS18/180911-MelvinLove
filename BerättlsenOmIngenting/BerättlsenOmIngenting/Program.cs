@@ -15,6 +15,8 @@ namespace BerättlsenOmIngenting
             story.FragaAnvandare();
             story.Beratta();
 
+            Console.ReadLine();
+
 
 
         }
